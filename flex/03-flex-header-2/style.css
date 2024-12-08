@@ -6,12 +6,15 @@ body {
   margin: 0;
   background: #eee;
   font-family: Besley, serif;
+  justify-content: space-between;
 }
 
 .header {
   background: white;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
+  display: flex;
+  margin: 2px 8px;
 }
 
 .profile-image {
@@ -37,6 +40,14 @@ button {
   padding: 8px 24px;
 }
 
+.notification-container {
+  display: flex;
+  flex:1;
+  justify-content: flex-end;
+  gap:8px;
+  align-items: center;
+}
+
 a {
   /* this removes the line under our links */
   text-decoration: none;
@@ -44,5 +55,8 @@ a {
 }
 
 ul {
+  width: 15rem;
   list-style-type: none;
+  display: flex;
+  justify-content: space-between;
 }
